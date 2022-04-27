@@ -1,0 +1,28 @@
+{
+  "name": "Spotify Romanizer",
+  "description": "Spotify Song Title Romanizer",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+      {
+        "matches": ["https://open.spotify.com/*"],
+        "run_at": "document_idle",
+        "js": ["src/content/sptf.js","src/wanakana.js"]
+      }
+  ],
+  "background":{
+    "service_worker":"src/background.js"
+  },
+  "action": {
+    "default_popup": "src/popup.html"
+  },
+  "icons": {
+    "16": "/icons/icon16.png",
+    "48": "/icons/icon48.png",
+    "128": "/icons/icon128.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": ["http://127.0.0.1:5000/*"]
+}
