@@ -1,4 +1,4 @@
-# spotifyRomanji
+# spotifyRomaji
 Converts Japanese songs to romaji, only in web-based Spotify. Uses a content script to call a python server to convert song titles into romaji, using pykakasi.
 ## **How to use:**
 1. Run python server
