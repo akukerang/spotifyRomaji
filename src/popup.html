@@ -2,24 +2,10 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <script>var exports = {};</script>
-        <script src="kuro/kuroshiro-analyzer-kuromoji.min.js"></script>
-        <script src="kuro/kuroshiro.min.js"></script>
-        <script src="kuro/kuroshiro.js"></script>
 
       </head>
       <body>
 
-        <script>
-          const kuroshiro = new Kuroshiro();
-          kuroshiro.init(new KuromojiAnalyzer({ dictPath: "url/to/dictFiles" }))
-    .then(function () {
-        return kuroshiro.convert("感じ取れたら手を繋ごう、重なるのは人生のライン and レミリア最高！", { to: "hiragana" });
-    })
-    .then(function(result){
-        console.log(result);
-    })
-        </script>
       </body>
 
 
