@@ -12,6 +12,8 @@ function getSongPlaying(){
             chrome.runtime.onMessage.addListener(function(romaji, sender, sendResponse){
                 songplayingromaji = romaji; 
             });
+        } else {
+            songplayingromaji = songplaying;
         }       
     },5000); //gives time for get request
 }
@@ -24,6 +26,7 @@ setInterval(function(){
     console.log(songplaying);
     console.log(songplayingromaji); 
     document.querySelector("#main > div > div.Root__top-container > div.Root__now-playing-bar > footer > div > div.vlcT8RVn1uWMsYpq2e5K > div > div.KKJUKKP3FyKKKdRjWDVj > div.tyIiSOWsTxiyox1_LW7F > div > div > div > div > span > a").innerHTML = songplayingromaji;
+    //sets song title area to songplayingromaji
 },30000) //updates every 30 seconds
 
 
