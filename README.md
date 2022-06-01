@@ -5,9 +5,7 @@ Converts Japanese songs to romaji, only in web-based Spotify. Uses a content scr
 2. Load unpackaged extension, with developer mode on. _(I'll package it later, maybe...)_
 3. Go to open.spotify.com
 
-
+timing wonky, sometimes replaces current song with last song. fixes itself after sometime.
 
 ![peko](https://c4.wallpaperflare.com/wallpaper/831/174/466/hololive-usada-pekora-hd-wallpaper-preview.jpg)
 
-_If someone reading this knows how to do this without a server, and all in browser lmk.
-Closest thing I can figure out is using kuroshiro, but I can't run it in the content script because dont know how to use dir files, cant get https working, and http is incompatible since Spotify runs on https. Can't run in background since the analyzer uses xhr, and too much work changing it all to fetch._
