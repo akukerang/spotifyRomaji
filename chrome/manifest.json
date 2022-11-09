@@ -7,7 +7,7 @@
       {
         "matches": ["https://open.spotify.com/*"],
         "run_at": "document_idle",
-        "js": ["src/content/sptf.js","src/wanakana.js"]
+        "js": ["src/content/sptf.js"]
       }
   ],
   "background":{
